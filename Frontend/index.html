@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AI Code Reviewer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Code Reviewer</h1>
+
+    <label>Filename (optional)</label>
+    <input id="filename" placeholder="example.js" />
+
+    <label>Language</label>
+    <select id="language">
+      <option>javascript</option>
+      <option>typescript</option>
+      <option>python</option>
+      <option>java</option>
+      <option>c</option>
+      <option>cpp</option>
+      <option>go</option>
+      <option>unspecified</option>
+    </select>
+
+    <label>Paste code</label>
+    <textarea id="code" placeholder="// paste code here" rows="12"></textarea>
+
+    <button id="reviewBtn">Get Review</button>
+
+    <h2>Review</h2>
+    <div id="result" class="result">No review yet.</div>
+
+    <h3>Past Reviews (recent)</h3>
+    <ul id="past"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
