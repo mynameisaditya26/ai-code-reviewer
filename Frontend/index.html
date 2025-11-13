@@ -1,40 +1,50 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>AI Code Reviewer</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>AI Code Reviewer</h1>
 
-    <label>Filename (optional)</label>
-    <input id="filename" placeholder="example.js" />
+    <div class="form-group">
+      <label>Filename (optional)</label>
+      <input id="filename" placeholder="example.js" />
+    </div>
 
-    <label>Language</label>
-    <select id="language">
-      <option>javascript</option>
-      <option>typescript</option>
-      <option>python</option>
-      <option>java</option>
-      <option>c</option>
-      <option>cpp</option>
-      <option>go</option>
-      <option>unspecified</option>
-    </select>
+    <div class="form-group">
+      <label>Language</label>
+      <select id="language">
+        <option>javascript</option>
+        <option>typescript</option>
+        <option>python</option>
+        <option>java</option>
+        <option>c</option>
+        <option>cpp</option>
+        <option>go</option>
+        <option>unspecified</option>
+      </select>
+    </div>
 
-    <label>Paste code</label>
-    <textarea id="code" placeholder="// paste code here" rows="12"></textarea>
+    <div class="form-group">
+      <label>Paste code</label>
+      <textarea id="code" placeholder="// paste code here" rows="12"></textarea>
+    </div>
 
     <button id="reviewBtn">Get Review</button>
 
-    <h2>Review</h2>
-    <div id="result" class="result">No review yet.</div>
+    <section class="review-section">
+      <h2>Review</h2>
+      <div id="result" class="result">No review yet.</div>
+    </section>
 
-    <h3>Past Reviews (recent)</h3>
-    <ul id="past"></ul>
+    <section class="past-section">
+      <h3>Past Reviews (Recent)</h3>
+      <ul id="past"></ul>
+    </section>
   </div>
 
   <script src="app.js"></script>
