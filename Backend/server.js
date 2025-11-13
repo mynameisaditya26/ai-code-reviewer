@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("../frontend")); // serve frontend from project/frontend
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 const MONGO = process.env.MONGODB_URI || "mongodb+srv://aditya18:Aditya%4009@cluster0.9iuprdw.mongodb.net/drive?retryWrites=true&w=majority";
 
 async function start() {
