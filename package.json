@@ -1,0 +1,8 @@
+{
+  "name": "ai-code-reviewer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd Backend && npm install && npm start"
+  }
+}
